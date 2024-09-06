@@ -14,7 +14,6 @@ section{
   align-items: center;
   padding: 0 1rem;
 }
-
 .nav__link{
   text-decoration: none;
   color: #444658;
@@ -54,6 +53,7 @@ section{
   font-size: 100px;
   line-height: 100px;
 }
+
 .section__title{
   display: flex;
   align-items: end;
