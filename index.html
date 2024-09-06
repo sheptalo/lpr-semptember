@@ -6,24 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <title>Cuper</title>
-  
-  <!-- HTML -->
 </head>
 
 <body>
-  <header class="header container">
-    <!-- <img src="" alt="logo">-->
+  <header class="header container section__border">
     <p class="main__title">Cuper</p>
     <nav class="nav">
       <a href="#main" class="nav__link">Главная</a>
       <a href="#shop" class="nav__link">Товары</a>
       <a href="#us" class="nav__link">О нас</a>
-      <a href="#" class="nav__link">Отзывы</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
     </nav>
   </header>
-  <section class="main" id="main">
-    <h1 class="main__title" >Cuper</h1>
+  <section class="main section__border" id="main">
+    <h1 class="main__title company-name" >Cuper</h1>
     <p class="main__text">Чаю быть</p>
+    <button class="subscription__send" type="submit">ЗА ПОКУПКАМИ</button>
   </section>
   <section>
     <div class="section__title">
@@ -49,35 +47,45 @@
     </div>
 
   </section>
-  <section class="reviews">
+  <section class="reviews" id="reviews">
     <div class="section__title">
       <h2 class="main__title">КАЧЕСТВО</h2>
       <p class="section__text">вот что о нас говорят.</p>
     </div>
 
     <div class="reviews__container">
-      <div class="reviews__card">
+      <div class="card">
         <h3 class="card__title"></h3>
         <p class="card__text"></p>
       </div>
     </div>
 
   </section>
-  <footer>
+  
+  <section class="subscription section__border">
+    <form action="get">
+      <input type="email" name="email" id="email" class="subscription__email" placeholder="e-mail">
+      <input type="submit" value="Подписаться" class="subscription__send">
+    </form>
+  </section>
+  
+  <footer class="nav__link">
     <div class="footer__links container">
       <a href="#main" class="nav__link">Главная</a>
       <a href="#shop" class="nav__link">Товары</a>
       <a href="#us" class="nav__link">О нас</a>
-      <a href="#" class="nav__link">Отзывы</a>
+      <a href="#reviews" class="nav__link">Отзывы</a>
     </div>
-    <div>
+    <div class="footer__contacts">
       <div>
-        Напишите нам: <a href="mailto:cuper@sinortax.ru">cuper@sinortax.ru</a>      
+        Напишите нам: <a class="nav__link" href="mailto:cuper@sinortax.ru">cuper@sinortax.ru</a>      
       </div>
       <div>
-        Позвоните нам: <a href="num:+7987654321">+7987654321</a>        
+        Позвоните нам: <a class="nav__link" href="num:+7987654321">+7987654321</a>        
       </div>
-
+      <div>
+        ©sinortax все права защищены <a class="nav__link" href="http://sinortax.ru">sinortax.ru</a>
+      </div>
     </div>
   </footer>
   <script src="main.js"></script>
