@@ -22,7 +22,7 @@
   <section class="main section__border" id="main">
     <h1 class="main__title company-name" >Cuper</h1>
     <p class="main__text">Чаю быть  </p>
-    <button class="section__btn" type="submit">ЗА ПОКУПКАМИ</button>
+    <a href='#' class="section__btn">ЗА ПОКУПКАМИ</a>
   </section>
   <section class="advantages ">
     <div class="section__title">
@@ -33,19 +33,19 @@
     </div>
 
     <div class="card-container">
-      <div class="card-container__card">
+      <div class="card-container__card no-shadow">
         <h3 class="card-container__card__title">
           Быстрая доставка
         </h3>
         <p class="card-container__card__paragraph">Мы обеспечиваем быструю доставку по всей России за 72 часа.</p>
       </div>
-      <div class="card-container__card">
+      <div class="card-container__card no-shadow">
         <h3 class="card-container__card__title">
           Низкие цены
         </h3>
         <p class="card-container__card__paragraph">Наши цены на 30% ниже рыночных.</p>
       </div>
-      <div class="card-container__card">
+      <div class="card-container__card no-shadow">
         <h3 class="card-container__card__title">
           Гарантия качества
         </h3>
@@ -65,28 +65,35 @@
       <div class="card-container__card">
         <img class='card-container__card__img' src="./assets/img/cups/cup.png" alt="">
         <h3 class="card-container__card__title">
-          Кружки без дизайна
+          Без дизайна
         </h3>
         <p class="card-container__card__paragraph">от 40р</p>
-        <a href=""></a>
+        <a href="#" class="section__btn">Узнать больше</a>
+
       </div>
       <div class="card-container__card">
         <img class='card-container__card__img' src="./assets/img/cups/cup-design.png" alt="">
         <h3 class="card-container__card__title">
-          Кружки с дизайном
+          С дизайном
         </h3>
-        <p class="card-container__card__paragraph">от 80р</p>
+        <p class="card-container__card__paragraph">от 150р</p>
+        <a href="#" class="section__btn">Узнать больше</a>
+        
       </div>
       <div class="card-container__card">
         <img class='card-container__card__img' src="./assets/img/cups/wood-cup.png" alt="">
 
         <h3 class="card-container__card__title">
-          Кружки из необычного материала
+          Разного материала
         </h3>
         <p class="card-container__card__paragraph">от 200р</p>
+        <a href="#" class="section__btn">Узнать больше</a>
+        
       </div>
     </div>
+    
   </section>
+
   <section class="about">
     <div class="section__title">
       <h2 class="main__title">МЫ</h2>
@@ -94,7 +101,28 @@
         Начинающая компания по производству кружек на любой вкус и цвет
       </p>
     </div>
+    
+    <div class="card-container about-container">
+      <div class="card-container__card no-shadow about-card">
+        <h3 class="card-container__card__title">
+          Минимум брака
+        </h3>
+        <p class="card-container__card__paragraph"><1% брака</p>
+      </div>
+      <div class="card-container__card no-shadow about-card">
+        <h3 class="card-container__card__title">
+          Доверие тысячи покупателей
+        </h3>
+        <p class="card-container__card__paragraph">Более 100 тысяч человек заказали наши кружки.</p>
+      </div>
+      <div class="card-container__card no-shadow about-card">
 
+        <h3 class="card-container__card__title">
+          Количество продаж
+        </h3>
+        <p class="card-container__card__paragraph">Мы продали более 200 тысяч кружек.</p>
+      </div>
+    </div>
   </section>
   <section class="reviews" id="reviews">
     <div class="section__title">
@@ -103,28 +131,33 @@
     </div>
     <div class="card-container reviews__container">
       <div class="card-container__card">
-        <h3 class="card-container__card__title">
-          Артём
-        </h3>
+        <h3 class="card-container__card__title">Артём</h3>
         <p class="card-container__card__paragraph">Отличные кружки за низкие цены и очень быстрая доставка.</p>
-        <a href=""></a>
+        <div class="card-container__card__stars">
+          <p>5</p>
+          <img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
+        </div>
       </div>
-      <div class="card-container__card">
-        <h3 class="card-container__card__title">
-          Лера
-        </h3>
+      <div class="card-container__card no-shadow">
+        <h3 class="card-container__card__title">Лера</h3>
         <p class="card-container__card__paragraph">Заказала сразу 20 кружек, думала что придется долго ждать и приедет брак. В итоге все кружки целые, а семья довольна.</p>
+        <div class="card-container__card__stars">
+          <p>5</p>
+          <img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
+        </div>
       </div>
       <div class="card-container__card">
         <h3 class="card-container__card__title">
           Кружки из необычного материала
         </h3>
         <p class="card-container__card__paragraph">от 200р</p>
+        <div class="card-container__card__stars">
+          <p>4</p><img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
+        </div>
       </div>
     </div>
 
   </section>
-  <button class="section__btn">За покупками</button>
 
   <section class="subscription section__border">
     <form action="">
@@ -151,7 +184,7 @@
         ©sinortax все права защищены <a class="nav__link" href="http://sinortax.ru">sinortax.ru</a>
       </div>
     </div>
-  </footer>
-  <script src="main.js"></script>
+  </footer> 
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

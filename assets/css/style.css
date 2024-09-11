@@ -51,11 +51,16 @@ section {
   margin: 0;
   font-weight: 100;
   font-family: "Protest Guerrilla", sans-serif;
+  animation: logo-rise linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  
 }
 
 .company-name {
   font-size: 100px;
   line-height: 100px;
+
 }
 
 .section__title {
@@ -75,21 +80,38 @@ section {
 }
 
 .card-container__card{
-  box-shadow: 1px 1px 10px gray;
+  box-shadow: 1px 1px 10px gray ;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   width: 20vw;
+  transition: 0.5s;
 }
-
+.card-container__card:hover{
+  box-shadow: 0 0 0 #fff;
+}
 .card-container__card__img{
   width: 100%;
 }
 .card-container__card__title{
   text-transform: uppercase;
   font-weight: 1000;
+  transition: 0.5s;
+  padding: 10px 0;
+
+}
+.card-container__card__title:hover{
+  font-size: 18px;
+
 }
 .card-container__card__paragraph{
   font-size: 14px;
+}
+.card-container__card__stars{
+  display: flex;
+  align-items: center;
+}
+.card-container__card__stars__img{
+  width: 30px;
 }
 .subscription__email {
   border: 1px solid black;
@@ -101,12 +123,18 @@ section {
   border: 1px solid black;
   border-radius: 30px;
   padding: 5px 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .reviews__container{
-  flex-direction: column;
   justify-content: space-between;
-  height: 80vh;
+}
+.about-container{
+  flex-direction: column;
+}
+.about-card{
+  width: 100%;
 }
 .footer {
   background: linear-gradient(#fff, gray);
@@ -124,4 +152,22 @@ section {
 .container {
   display: flex;
   justify-content: space-between;
+}
+
+.no-shadow{
+  box-shadow: 0px 0px 0px #fff;
+}
+
+@keyframes logo-rise{
+  0%{
+
+  }
+
+  100%{
+    font-size: 200px;
+  }
+
+  200%{
+    font-size: 50px;
+  }
 }
