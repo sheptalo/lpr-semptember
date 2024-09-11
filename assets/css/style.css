@@ -43,6 +43,7 @@ section {
 
 .section__border {
   border-bottom: 1px solid #1D1E2C;
+  margin-bottom: 120px;
 }
 
 .main__title {
@@ -60,6 +61,7 @@ section {
 .section__title {
   display: flex;
   align-items: end;
+  margin-bottom: 30px;
 }
 
 .section__text {
@@ -67,19 +69,48 @@ section {
   font-size: 14px;
 }
 
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container__card{
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 20vw;
+}
+
+.card-container__card__img{
+  width: 100%;
+}
+.card-container__card__title{
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+.card-container__card__paragraph{
+  font-size: 14px;
+}
 .subscription__email {
   border: 1px solid black;
   border-radius: 30px;
   padding: 5px 10px;
 }
-.subscription__send {
+.section__btn {
   background-color: inherit;
   border: 1px solid black;
   border-radius: 30px;
   padding: 5px 10px;
 }
 
+.reviews__container{
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+}
 .footer {
+  background: linear-gradient(#fff, gray);
+
   padding: 2rem 5rem 0 5rem;
   height: 50vh;
 }

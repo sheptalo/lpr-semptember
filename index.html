@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/img/logog-transformed.png" type="image/x-icon">
   <title>Cuper</title>
 </head>
 
@@ -20,23 +21,71 @@
   </header>
   <section class="main section__border" id="main">
     <h1 class="main__title company-name" >Cuper</h1>
-    <p class="main__text">Чаю быть</p>
-    <button class="subscription__send" type="submit">ЗА ПОКУПКАМИ</button>
+    <p class="main__text">Чаю быть  </p>
+    <button class="section__btn" type="submit">ЗА ПОКУПКАМИ</button>
   </section>
-  <section>
+  <section class="advantages ">
     <div class="section__title">
       <h2 class="main__title">НАШИ</h2> 
       <p class="section__text">
         преимущества
       </p>
     </div>
+
+    <div class="card-container">
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Быстрая доставка
+        </h3>
+        <p class="card-container__card__paragraph">Мы обеспечиваем быструю доставку по всей России за 72 часа.</p>
+      </div>
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Низкие цены
+        </h3>
+        <p class="card-container__card__paragraph">Наши цены на 30% ниже рыночных.</p>
+      </div>
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Гарантия качества
+        </h3>
+        <p class="card-container__card__paragraph">Мы гарантируем качественный товар, с возможностью бесплатного возврата.</p>
+      </div>
+    </div>
+
   </section>
-  <section id="shop" class="shop">
+
+  <section id="shop" class="shop section__border">
     <div class="section__title">
       <h2 class="main__title">ТОВАРЫ</h2> 
       <p class="section__text">которые мы производим.</p>
     </div>
 
+    <div class="card-container">
+      <div class="card-container__card">
+        <img class='card-container__card__img' src="./assets/img/cups/cup.png" alt="">
+        <h3 class="card-container__card__title">
+          Кружки без дизайна
+        </h3>
+        <p class="card-container__card__paragraph">от 40р</p>
+        <a href=""></a>
+      </div>
+      <div class="card-container__card">
+        <img class='card-container__card__img' src="./assets/img/cups/cup-design.png" alt="">
+        <h3 class="card-container__card__title">
+          Кружки с дизайном
+        </h3>
+        <p class="card-container__card__paragraph">от 80р</p>
+      </div>
+      <div class="card-container__card">
+        <img class='card-container__card__img' src="./assets/img/cups/wood-cup.png" alt="">
+
+        <h3 class="card-container__card__title">
+          Кружки из необычного материала
+        </h3>
+        <p class="card-container__card__paragraph">от 200р</p>
+      </div>
+    </div>
   </section>
   <section class="about">
     <div class="section__title">
@@ -52,20 +101,35 @@
       <h2 class="main__title">КАЧЕСТВО</h2>
       <p class="section__text">вот что о нас говорят.</p>
     </div>
-
-    <div class="reviews__container">
-      <div class="card">
-        <h3 class="card__title"></h3>
-        <p class="card__text"></p>
+    <div class="card-container reviews__container">
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Артём
+        </h3>
+        <p class="card-container__card__paragraph">Отличные кружки за низкие цены и очень быстрая доставка.</p>
+        <a href=""></a>
+      </div>
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Лера
+        </h3>
+        <p class="card-container__card__paragraph">Заказала сразу 20 кружек, думала что придется долго ждать и приедет брак. В итоге все кружки целые, а семья довольна.</p>
+      </div>
+      <div class="card-container__card">
+        <h3 class="card-container__card__title">
+          Кружки из необычного материала
+        </h3>
+        <p class="card-container__card__paragraph">от 200р</p>
       </div>
     </div>
 
   </section>
-  
+  <button class="section__btn">За покупками</button>
+
   <section class="subscription section__border">
     <form action="">
       <input type="email" name="email" id="email" class="subscription__email" placeholder="e-mail">
-      <input type="submit" value="Подписаться" class="subscription__send">
+      <input type="submit" value="Подписаться" class="section__btn">
     </form>
   </section>
   
