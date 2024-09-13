@@ -7,14 +7,28 @@ body {
 
 section {
   padding: 2vh 10vw;
+  @media (max-width: 500px) {
+    padding: 1vh 1vw;
+  }
 }
-
+/*TODO burger */
 .header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
   height: 80px;
   align-items: center;
   padding: 0 12px;
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 }
-
+.nav{
+  @media (max-width: 500px) {
+    display: none;
+    
+  }
+}
 .nav__link {
   text-decoration: none;
   color: #444658;
@@ -22,12 +36,21 @@ section {
   /* margin-left: 20px; */
   padding: 0 12px;
   font-size: 20px;
+  @media (max-width: 500px) {
+    padding: 0;
+  }
 }
 
 .nav__link:first-child {
   margin-left: 0;
 }
-
+.header__burger{
+  display: none;
+  @media (max-width: 500px){
+    display: block;
+    width: 30px;
+  }
+}
 .nav__button {
   border: 2px solid #515DE2;
   background: inherit;
@@ -35,7 +58,7 @@ section {
 }
 
 .main {
-  padding-top: 10vh;
+  padding-top: 20vh;
   background: url("") no-repeat contain/cover;
   text-align: center;
   height: 80vh;
@@ -52,9 +75,13 @@ section {
   font-weight: 100;
   font-family: "Protest Guerrilla", sans-serif;
   animation: logo-rise linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 50%;
-  
+  transition: 1s;
+
+
+  @media (max-width: 500px){
+    font-size: 30px;
+  }
+
 }
 
 .company-name {
@@ -76,15 +103,20 @@ section {
 
 .card-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card-container__card{
   box-shadow: 1px 1px 10px gray ;
   border-radius: 20px;
   padding: 20px 20px;
-  width: 20vw;
+  width:22vw;
   transition: 0.5s;
+  @media (max-width: 500px) {
+    width: 80vw;
+  }
 }
 .card-container__card:hover{
   box-shadow: 0 0 0 #fff;
@@ -97,7 +129,10 @@ section {
   font-weight: 1000;
   transition: 0.5s;
   padding: 10px 0;
-
+  @media (max-width: 500px){
+    font-size: 16px;
+    font-weight: 800;
+  }
 }
 .card-container__card__title:hover{
   font-size: 18px;
@@ -112,6 +147,9 @@ section {
 }
 .card-container__card__stars__img{
   width: 30px;
+}
+.subscription{
+  margin-bottom: 0  ;
 }
 .subscription__email {
   border: 1px solid black;
@@ -130,17 +168,32 @@ section {
 .reviews__container{
   justify-content: space-between;
 }
+.review{
+  mix-blend-mode: difference; 
+  text-shadow: 2px 2px 10px #fff;
+  background: url('./../img/black-cup.png') no-repeat left center;
+}
+.second-review{
+  background: url('./../img/white-cup.png') no-repeat left center;
+
+}
+
 .about-container{
   flex-direction: column;
 }
-.about-card{
-  width: 100%;
-}
 .footer {
-  background: linear-gradient(#fff, gray);
+  background: linear-gradient(#fff, rgb(122, 122, 122));
 
-  padding: 2rem 5rem 0 5rem;
-  height: 50vh;
+  padding: 1rem 7rem 0 7rem;
+  @media (max-width: 500px){
+    padding: 0 1vw;
+  }
+}
+.footer__links{
+  @media (max-width: 500px){
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .footer__contacts {
   margin-top: 5rem;
@@ -159,15 +212,13 @@ section {
 }
 
 @keyframes logo-rise{
-  0%{
-
-  }
+  0%{}
 
   100%{
-    font-size: 200px;
-  }
-
-  200%{
-    font-size: 50px;
+    font-size: 55px;
+    @media (max-width: 500px){
+      font-size: 25px;
+      
+    }
   }
 }
