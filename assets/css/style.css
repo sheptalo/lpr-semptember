@@ -169,7 +169,6 @@ section {
   justify-content: space-between;
 }
 .review{
-  mix-blend-mode: difference; 
   text-shadow: 2px 2px 10px #fff;
   background: url('./../img/black-cup.png') no-repeat left center;
 }
