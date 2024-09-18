@@ -10,7 +10,7 @@
 </head>
 <body>
   <main class="main">
-    <header class="header container section__border">
+    <header class="header container section__border mobile-border">
       <p class="main__title">Cuper</p>
       <img class="header__burger" src="./assets/img/burger.svg" alt="">
   
@@ -49,8 +49,9 @@
   <section id="shop" class="shop section__border">
     <div class="shop__container">
       <div class="shop__container__card">
+        <h3 class="shop__container__card__title mobile">Обычные кружки</h3>
         <img class='shop__container__card__img' src="./assets/img/cups/cup-in-hand.webp" alt="">
-        <h3 class="shop__container__card__title">Обычные кружки</h3>
+        <h3 class="shop__container__card__title desctop">Обычные кружки</h3>
       </div>
       <div class="shop__container__card">
         <h3 class="shop__container__card__title right">
@@ -74,72 +75,59 @@
     
   </section>
 
-  <section class="about">
-    <div class="section__title">
-      <h2 class="main__title">МЫ</h2>
-    </div>
-    
-    <div class="card-container about-container">
-      <div class="card-container__card no-shadow about-card">
-        <h3 class="card-container__card__title">
-          Минимум брака
-        </h3>
-        <p class="card-container__card__paragraph"><1% брака</p>
-      </div>
-      <div class="card-container__card no-shadow about-card">
-        <h3 class="card-container__card__title">
-          Доверие тысячи покупателей
-        </h3>
-        <p class="card-container__card__paragraph">Более 100 тысяч человек заказали наши кружки.</p>
-      </div>
-      <div class="card-container__card no-shadow about-card">
+  <section class="about section__border">
+      <h2 class="about__title">мы начинающая компания которая<br>ЗАБОТИТЬСЯ О СВОИХ КЛИЕНТАХ</h2>
 
-        <h3 class="card-container__card__title">
-          Количество продаж
+    
+    <div class="about__container container">
+      <div class="about__card left">
+        <h3 class="about__card__title ">
+          Минимум <br class="desctop"> брака
         </h3>
-        <p class="card-container__card__paragraph">Мы продали более 200 тысяч кружек.</p>
+        <p class="about__card__paragraph"><1% брака при<br> доставке</p>
+      </div>
+      <div class="about__card center">
+        <h3 class="about__card__title">
+          Доверие тысячи <br> покупателей
+        </h3>
+        <p class="about__card__paragraph">Более 100 тысяч человек<br>заказали наши кружки.</p>
+      </div>
+      <div class="about__card right">
+        <h3 class="about__card__title">
+          Количество <br class="desctop"> продаж
+        </h3>
+        <p class="about__card__paragraph">Мы продали <br class="desctop"> более 200 <br class="desctop"> тысяч кружек.</p>
       </div>
     </div>
   </section>
-  <section class="reviews" id="reviews">
+  <section class="reviews section__border" id="reviews">
     <div class="section__title">
-      <h2 class="main__title">КАЧЕСТВО</h2>
-      <p class="section__text">вот что о нас говорят.</p>
+      <h2 class="main__title">пейте свой любимый напиток а мы позаботимся о КАЧЕСТВЕ</h2>
     </div>
     <div class="card-container reviews__container">
       <div class="card-container__card review">
           <h3 class="card-container__card__title">Артём</h3>
           <p class="card-container__card__paragraph">Отличные кружки за низкие цены и очень быстрая доставка.</p>
-        <div class="card-container__card__stars">
-          <p>5</p>
-          <img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
-        </div>
       </div>
       <div class="card-container__card no-shadow">
         <h3 class="card-container__card__title">Лера</h3>
         <p class="card-container__card__paragraph">Заказала сразу 20 кружек, думала что придется долго ждать и приедет брак. В итоге все кружки целые, а семья довольна.</p>
-        <div class="card-container__card__stars">
-          <p>5</p>
-          <img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
-        </div>
       </div>
       <div class="card-container__card second-review">
         <h3 class="card-container__card__title">
           Василий
         </h3>
         <p class="card-container__card__paragraph">Эти кружки меня приятно удивили.</p>
-        <div class="card-container__card__stars">
-          <p>4</p><img class="card-container__card__stars__img" src="./assets/img/star.svg" alt="">
-        </div>
       </div>
     </div>
 
   </section>
 
   <section class="subscription section__border">
-    <form action="">
+    <h2 class="subscription__title">узнайте о<br> наших акциях<br> первыми</h2>
+    <form class='subscription__form' action="">
       <input type="email" name="email" id="email" class="subscription__email" placeholder="e-mail">
-      <input type="submit" value="Подписаться" class="section__btn">
+      <input type="submit" value="Подписаться" class="subscription__button">
     </form>
   </section>
   

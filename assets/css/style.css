@@ -148,9 +148,10 @@ a{
 .advantages{
   background: url('./../img/rotated-bg.webp') no-repeat center center / cover;
   height: 100vh;
-  padding: 0 385px;
+  padding: 0 10vw;
 
   padding-top: 140px;
+
 
 }
 
@@ -169,7 +170,10 @@ a{
   padding: 67px 35px;
   border-radius: 25px;
   gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between  ;
+  @media (max-width: 500px){
+    flex-wrap: wrap;
+  }
 }
 .advantages__card__title{
   font-size: 20px;
@@ -182,7 +186,7 @@ a{
 }
 .shop{
   margin-top: 232px;
-  padding: 0 195px;
+  padding: 0 12vw;
   padding-bottom: 265px;
 }
 .shop__container{
@@ -217,15 +221,69 @@ a{
 .card-container__card__stars__img{
   width: 30px;
 }
-.subscription{
-  margin-bottom: 0  ;
+.about{
+  font-family: 'Montserrat';
+  
+  padding-bottom: 450px;
 }
-.subscription__email {
-  border: 1px solid black;
-  border-radius: 30px;
-  padding: 5px 10px;
+.about__title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
 }
 
+.about__container{
+  width: 80vw;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.about__card{
+  font-size: 40px;
+}
+.about__card__title{
+  font-weight: 900;
+  line-height: 40px;
+}
+.about__card__paragraph{
+  margin-top: 40px;
+}
+.subscription{
+  padding-top: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 280px;
+  margin-bottom: 0;
+}
+.subscription__title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+.subscription__form{
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+}
+.subscription__email {
+  height: 46px;
+  width: 310px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding-left: 22px;
+}
+
+.subscription__button{
+  border-radius: 30px;
+  background-color: inherit;
+  height: 30px;
+  width: max-content;
+  padding: 0 20px;
+  align-self: center;
+  border: 1px solid black;
+}
 .reviews__container{
   justify-content: space-between;
 }
@@ -238,9 +296,6 @@ a{
 
 }
 
-.about-container{
-  flex-direction: column;
-}
 .footer {
   background: #D1D1D1;
 
@@ -249,11 +304,8 @@ a{
     padding: 0 1vw;
   }
 }
-.footer__links{
-  @media (max-width: 500px){
-    flex-direction: column;
-    text-align: center;
-  }
+@media (max-width: 500px){
+
 }
 .footer__contacts {
   margin-top: 5rem;
@@ -273,9 +325,13 @@ a{
   display: none;
 }
 
+
 @media (max-width: 500px){
   .mobile{
-    display: block;
+    display: inline;
+  }
+  .mobile-border{
+    border-bottom: 0;
   }
   .desctop{
     display: none;
@@ -286,13 +342,18 @@ a{
     padding-top: 175px;
     
   } 
+  .advantages__container{
+    justify-content: center;
+  }
   .advantages__title{
     font-size: 30px;
-    padding: 54px 12px;
+    padding: 40px 5px;
   }
   .shop__container__card__title   {
     font-size: 50px;
     font-weight: 800;
+    text-align: center;
+    width: 100%;  
   }
   .shop{
     align-items: center;
@@ -306,5 +367,57 @@ a{
   .shop__container__card__img{
     width: 100%;
     border-radius: 50px;
+  }
+  .about{
+    padding: 0;
+    padding-bottom: 150px;
+  }
+  .about__title{
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .about__container{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  .about__card{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .about__card__title{
+    margin-top: 50px;
+    display: block; 
+    width: 100vw;
+    font-size: 30px;
+  }
+  .about__card__paragraph{
+    display: block; 
+    width: 100%;
+    font-size: 30px;
+  }
+  .footer__links{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media (max-width:400px){
+  .advantages{
+    padding: 0 13px;
+  } 
+  .advantages__title{
+    text-align: center;
+    font-size: 30px;
+    width: min-content;
+  }
+  .shop__container__card__title   {
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;  
+  }
+  .subscription__email{
+    width: 210px;
   }
 }
