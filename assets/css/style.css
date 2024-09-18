@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -11,11 +15,55 @@ section {
     padding: 1vh 1vw;
   }
 }
-/*TODO burger */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.section__btn {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  text-align: left;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.center{
+  text-align: center;
+  
+}
+
+.right{
+  text-align: right;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.section__border {
+  border-bottom: 1px solid #1D1E2C;
+  margin-bottom: 120px;
+}
+
+.main{
+  height: 100vh;
+  background: url('./../img/main-bg.png') no-repeat center center /cover;
+}
+
 .header {
-  position: fixed;
-  width: 100%;
-  background-color: #fff;
   height: 80px;
   align-items: center;
   padding: 0 12px;
@@ -23,12 +71,14 @@ section {
     padding: 0;
   }
 }
-.nav{
-  @media (max-width: 500px) {
+
+
+@media (max-width: 500px) {
+  .nav{
     display: none;
-    
   }
 }
+
 .nav__link {
   text-decoration: none;
   color: #444658;
@@ -44,6 +94,7 @@ section {
 .nav__link:first-child {
   margin-left: 0;
 }
+
 .header__burger{
   display: none;
   @media (max-width: 500px){
@@ -51,22 +102,34 @@ section {
     width: 30px;
   }
 }
+
 .nav__button {
   border: 2px solid #515DE2;
   background: inherit;
   border-radius: 30px;
 }
 
-.main {
-  padding-top: 20vh;
+.main__sec {
+  padding-top: 10vh;
   background: url("") no-repeat contain/cover;
   text-align: center;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section__border {
-  border-bottom: 1px solid #1D1E2C;
-  margin-bottom: 120px;
+.main__btn{
+  display: block;
+  width: max-content;
+  margin-top: 60px;
+  padding: 12px 24px;
+}
+
+.main__text{
+  font-family: "Montserrat", serif;
+  font-size: 60px;
+  font-weight: 400;
 }
 
 .main__title {
@@ -74,9 +137,6 @@ section {
   margin: 0;
   font-weight: 100;
   font-family: "Protest Guerrilla", sans-serif;
-  animation: logo-rise linear;
-  transition: 1s;
-
 
   @media (max-width: 500px){
     font-size: 30px;
@@ -84,66 +144,75 @@ section {
 
 }
 
-.company-name {
-  font-size: 100px;
-  line-height: 100px;
+
+.advantages{
+  background: url('./../img/rotated-bg.webp') no-repeat center center / cover;
+  height: 100vh;
+  padding: 0 385px;
+
+  padding-top: 140px;
 
 }
 
-.section__title {
-  display: flex;
-  align-items: end;
-  margin-bottom: 30px;
+.advantages__title{
+  background-color: #fff;
+  padding: 34px 54px;
+  border-radius: 25px;
+  width: max-content;
+  margin: 0 auto;
+
 }
 
-.section__text {
-  margin-left: 10px;
-  font-size: 14px;
-}
-
-.card-container{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+.advantages__container{
+  margin-top: 89px;
+  background-color: #fff;
+  padding: 67px 35px;
+  border-radius: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
+.advantages__card__title{
+  font-size: 20px;
+  font-weight: 900;
+}
+.advantages__card__text{
+  font-size: 18px;
+  margin-top: 10px;
+  width: 320px;
+}
+.shop{
+  margin-top: 232px;
+  padding: 0 195px;
+  padding-bottom: 265px;
+}
+.shop__container{
+  display: flex;
+  flex-direction: column;
+  gap: 210px;
+}
 
-.card-container__card{
-  box-shadow: 1px 1px 10px gray ;
-  border-radius: 20px;
-  padding: 20px 20px;
-  width:22vw;
+.shop__container__card{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
   transition: 0.5s;
-  @media (max-width: 500px) {
-    width: 80vw;
-  }
+  justify-content: space-between;
 }
-.card-container__card:hover{
-  box-shadow: 0 0 0 #fff;
+.shop__container__card__img{
+  width: 60%;
+  border-radius: 50px;
 }
-.card-container__card__img{
-  width: 100%;
-}
-.card-container__card__title{
+.shop__container__card__title{
+  width: 380px;
   text-transform: uppercase;
   font-weight: 1000;
+  font-size: 60px;
   transition: 0.5s;
   padding: 10px 0;
-  @media (max-width: 500px){
-    font-size: 16px;
-    font-weight: 800;
-  }
-}
-.card-container__card__title:hover{
-  font-size: 18px;
 
 }
 .card-container__card__paragraph{
   font-size: 14px;
-}
-.card-container__card__stars{
-  display: flex;
-  align-items: center;
 }
 .card-container__card__stars__img{
   width: 30px;
@@ -155,14 +224,6 @@ section {
   border: 1px solid black;
   border-radius: 30px;
   padding: 5px 10px;
-}
-.section__btn {
-  background-color: inherit;
-  border: 1px solid black;
-  border-radius: 30px;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: black;
 }
 
 .reviews__container{
@@ -181,7 +242,7 @@ section {
   flex-direction: column;
 }
 .footer {
-  background: linear-gradient(#fff, rgba(122, 122, 122, 0.498));
+  background: #D1D1D1;
 
   padding: 1rem 7rem 0 7rem;
   @media (max-width: 500px){
@@ -204,23 +265,46 @@ section {
   text-decoration: underline;
   color: #000;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
+
+.desctop{
+  display: block;
+}
+.mobile{
+  display: none;
 }
 
-.no-shadow{
-  box-shadow: 0px 0px 0px #fff;
-}
-
-@keyframes logo-rise{
-  0%{}
-
-  100%{
-    font-size: 55px;
-    @media (max-width: 500px){
-      font-size: 25px;
-      
-    }
+@media (max-width: 500px){
+  .mobile{
+    display: block;
+  }
+  .desctop{
+    display: none;
+  }
+  .advantages{
+    padding: 0 26px;
+    background: url('./../img/secong-page-bg.webp') no-repeat center center / cover;
+    padding-top: 175px;
+    
+  } 
+  .advantages__title{
+    font-size: 30px;
+    padding: 54px 12px;
+  }
+  .shop__container__card__title   {
+    font-size: 50px;
+    font-weight: 800;
+  }
+  .shop{
+    align-items: center;
+    margin-top: 232px;
+    padding: 0;
+    padding-bottom: 265px;
+  }
+  .shop__container{
+    align-items: center;
+  }
+  .shop__container__card__img{
+    width: 100%;
+    border-radius: 50px;
   }
 }
