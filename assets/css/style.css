@@ -339,7 +339,7 @@ a{
 .footer {
   background: #D1D1D1;
 
-  padding: 1rem 7rem 0 7rem;
+  padding: 1rem 7rem 2rem 7rem;
   @media (max-width: 500px){
     padding: 0 1vw;
   }
