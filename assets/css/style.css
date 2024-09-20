@@ -86,6 +86,7 @@ a{
   /* margin-left: 20px; */
   padding: 0 12px;
   font-size: 20px;
+  transition: 0.2s;
   @media (max-width: 500px) {
     padding: 0;
   }
@@ -95,6 +96,9 @@ a{
   margin-left: 0;
 }
 
+.nav__link:hover{
+  color: #fff;
+}
 .header__burger{
   display: none;
   width: 60px;
