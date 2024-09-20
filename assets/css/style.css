@@ -169,6 +169,8 @@ a{
 }
 
 .advantages__container{
+  max-width: 1150px;
+  margin: 0 auto;
   margin-top: 89px;
   background-color: #fff;
   padding: 67px 35px;
