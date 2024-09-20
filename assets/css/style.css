@@ -10,7 +10,7 @@ body {
 }
 
 section {
-  padding: 2vh 10vw;
+  padding: 2vh 8vw;
   @media (max-width: 500px) {
     padding: 1vh 1vw;
   }
@@ -240,7 +240,6 @@ a{
 }
 
 .about__container{
-  width: 80vw;
   margin-top: 40px;
   flex-wrap: wrap;
 }
@@ -365,8 +364,31 @@ a{
 }
 
 
-
-
+@media(max-width: 1500px){
+  .about__title{
+    font-size: 50px;
+  }
+  .about__card__title{
+    font-size: 40px;
+  }
+  .about__card__paragraph{
+    font-size: 35px;
+  }
+}
+@media(max-width: 1300px){
+  .about{
+    padding: 16px 60px 280px 60px;
+  }
+  .about__title{
+    font-size: 45px;
+  }
+  .about__card__title{
+    font-size: 35px;
+  }
+  .about__card__paragraph{
+    font-size: 30px;
+  }
+}
 @media(max-width: 1000px){
 
 
@@ -415,6 +437,12 @@ a{
   }
 }
 @media(max-width: 862px){
+  .footer__links{
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1rem 2rem 0 2rem;
+    gap: 80px;
+  }
   .mobile{
     display: inline;
   }
@@ -489,12 +517,7 @@ a{
     font-size: 35px;
   }
 
-  .footer__links{
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 1rem 2rem 0 2rem;
-    gap: 80px;
-  }
+
 }
 
 @media (max-width:400px){
